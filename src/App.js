@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import Header from "./Header";
 
 function App() {
   return (
-    <div className="App">
+    // BEM
+    <div className="app">
       <h1>Amazon Clone Home Component</h1>
+      {/* HEADER */}
+      {/* HOME */}
     </div>
   );
 }
