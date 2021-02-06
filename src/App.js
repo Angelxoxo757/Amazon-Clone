@@ -6,7 +6,6 @@ function App() {
   return (
     // BEM
     <div className="app">
-      <h1>Amazon Clone Home Component</h1>
       <Header />
       {/* HEADER */}
       {/* HOME */}
