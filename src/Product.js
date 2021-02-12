@@ -3,7 +3,7 @@ import "./Product.css";
 
 function Project() {
   return (
-    <div>
+    <div className="product">
       <p>Product page</p>
     </div>
   );
