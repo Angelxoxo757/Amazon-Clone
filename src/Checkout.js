@@ -1,5 +1,6 @@
 import React from "react";
 import "./Checkout.css";
+import Subtotal from "./Subtotal";
 
 function Checkout() {
   return (
@@ -7,7 +8,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__ad"
-          src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/YjgwNDI1YjYt/YjgwNDI1YjYt-OTBiNzQ3NGUt-w1500._CB661646969_.jpg"
+          src="https://m.media-amazon.com/images/G/01/Auto/holiday2020/Holiday_2020_BgSlate_Trees_desktop-Sweepstakes-banner-landingpage.jpg"
           alt=""
         />
         <div>
@@ -15,7 +16,7 @@ function Checkout() {
         </div>
       </div>
       <div className="checkout__right">
-        <h2>Subtotal</h2>
+        <Subtotal />
       </div>
     </div>
   );
