@@ -3,6 +3,7 @@ import React from "react";
 import "./Product.css";
 
 function Project({ id, title, image, price, rating }) {
+  const addToBasket = () => {};
   return (
     <div className="product">
       <div className="product__info">
@@ -20,7 +21,7 @@ function Project({ id, title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt="" />
-      <Button>Add to Basket</Button>
+      <Button onClick={addToBasket}>Add to Basket</Button>
     </div>
   );
 }
