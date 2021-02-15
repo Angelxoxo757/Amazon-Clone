@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2021/Other/RB-3673_SVOD_ValentinesDay/RB-3673_SVOD_ValentinesDay_v2_1500x600._CB661029042_.jpg"
+          src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/Nzg3NzIxZDct/Nzg3NzIxZDct-OGNhZDRmNzYt-w1500._CB412118632_.jpg"
           alt=""
         />
         <div className="home__row">
