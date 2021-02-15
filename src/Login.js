@@ -53,7 +53,7 @@ function Login() {
         </form>
         <p>
           By signing in you agree to Amazon’s Clone conditions of use & sale.
-          Please see our own privacy notice, our cookies notice and our
+          Please see our privacy notice, our cookies notice and our
           Internet-based ads Notice.
         </p>
         <button onClick={register} className="login__registerButton">
