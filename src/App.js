@@ -7,6 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 
 function App() {
+  useEffect(() => {}, []);
   return (
     // BEM
     <Router>
