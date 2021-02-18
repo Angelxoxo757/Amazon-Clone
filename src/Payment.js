@@ -1,11 +1,30 @@
 import { Link } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import CheckoutProduct from "./CheckoutProduct";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
+import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
+
+  const [error, setError] = useState(null);
+  const [disabled, setDisabled] = useState(true);
+
+  const handleSubmit = (e) => {
+    // STRIPE CODE
+  };
+
+  const handleChange = (event) => {
+    // LISTEN TO CHANGES IN CARDELEMENT
+    // AND SHOWS ERRORS WHEN CUSTOMERS TYPES THEIR CARD DETAILS
+    setDisabled(event.empty);
+    setError(event.error ? event.error.message : "");
+  };
+
+  const stripe = useStripe();
+  const elements = useElements();
+
   return (
     <div className="payment">
       <div className="payment__container">
@@ -45,7 +64,12 @@ function Payment() {
           <div className="payment__title">
             <h3>Payment method</h3>
           </div>
-          <div className="payment__details">{/* STRIPE CODE */}</div>
+          <div className="payment__details">
+            {/* STRIPE CODE */}
+            <form onSubmit={handleSubmit}>
+              <CardElement onChange={handleChange} />
+            </form>
+          </div>
         </div>
       </div>
     </div>
