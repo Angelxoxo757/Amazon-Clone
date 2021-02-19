@@ -39,7 +39,14 @@ function Payment() {
           card: elements.getElement(CardElement),
         },
       })
-      .then(response);
+      .then(({paymentIntent}) => {
+        // PAYMENT CONFIRMATION
+        setSuceeded(true);
+        setError(null)
+        setProcessing(false)
+
+        history.replace('/orders')
+      });
   };
 
   const handleChange = (event) => {
